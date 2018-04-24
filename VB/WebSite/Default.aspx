@@ -1,66 +1,66 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="true" CodeFile="Default.aspx.vb" Inherits="_Default" %>
-<%@ Register Assembly="DevExpress.Web.v11.2, Version=11.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
-	Namespace="DevExpress.Web.ASPxTabControl" TagPrefix="dx" %>
-<%@ Register Assembly="DevExpress.Web.v11.2, Version=11.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
-	Namespace="DevExpress.Web.ASPxClasses" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxTabControl" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxClasses" TagPrefix="dx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title></title>
-	<style type="text/css">
-		body, html
-		{
-			padding: 0;
-			margin: 0;
-		}
-	</style>
+    <title></title>
+    <style type="text/css">
+        body, html
+        {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 
-	<script type="text/javascript">
+    <script type="text/javascript">
 
-		function OnInit(s, e) {
-			AdjustSize();
+        function OnInit(s, e) {
+            AdjustSize();
 
-			ASPxClientUtils.AttachEventToElement(window, "resize", function(evt) {
-				AdjustSize();
-			});
-		}
-		function AdjustSize() {
-			var height = document.documentElement.clientHeight;
-			pc.SetHeight(height);
-		}
+            ASPxClientUtils.AttachEventToElement(window, "resize", function(evt) {
+                AdjustSize();
+            });
+        }
+        function AdjustSize() {
+            var height = document.documentElement.clientHeight;
+            pc.SetHeight(height);
+        }
 
-	</script>
+    </script>
 
 </head>
 <body>
-	<form id="form1" runat="server">
-	<dx:ASPxPageControl ID="pc" runat="server" ActiveTabIndex="0" Height="100px" ClientInstanceName="pc"
-		Width="100%">
-		<ContentStyle BackColor="LightGray">
-		</ContentStyle>
-		<Paddings Padding="0px" />
-		<TabPages>
-			<dx:TabPage Text="First">
-				<ContentCollection>
-					<dx:ContentControl runat="server">
-					</dx:ContentControl>
-				</ContentCollection>
-			</dx:TabPage>
-			<dx:TabPage Text="Second">
-				<ContentCollection>
-					<dx:ContentControl runat="server">
-					</dx:ContentControl>
-				</ContentCollection>
-			</dx:TabPage>
-			<dx:TabPage Text="Third">
-				<ContentCollection>
-					<dx:ContentControl runat="server">
-					</dx:ContentControl>
-				</ContentCollection>
-			</dx:TabPage>
-		</TabPages>
-		<ClientSideEvents Init="OnInit" />
-	</dx:ASPxPageControl>
-	</form>
+    <form id="form1" runat="server">
+    <dx:ASPxPageControl ID="pc" runat="server" ActiveTabIndex="0" Height="100px" ClientInstanceName="pc"
+        Width="100%">
+        <ContentStyle BackColor="LightGray">
+        </ContentStyle>
+        <Paddings Padding="0px" />
+        <TabPages>
+            <dx:TabPage Text="First">
+                <ContentCollection>
+                    <dx:ContentControl runat="server">
+                    </dx:ContentControl>
+                </ContentCollection>
+            </dx:TabPage>
+            <dx:TabPage Text="Second">
+                <ContentCollection>
+                    <dx:ContentControl runat="server">
+                    </dx:ContentControl>
+                </ContentCollection>
+            </dx:TabPage>
+            <dx:TabPage Text="Third">
+                <ContentCollection>
+                    <dx:ContentControl runat="server">
+                    </dx:ContentControl>
+                </ContentCollection>
+            </dx:TabPage>
+        </TabPages>
+        <ClientSideEvents Init="OnInit" />
+    </dx:ASPxPageControl>
+    </form>
 </body>
 </html>

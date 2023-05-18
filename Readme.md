@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # How to use the ASPxPageControl control in Full Screen mode (100% browser Width and Height)
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3940)**
+**[[Run Online]](https://codecentral.devexpress.com/128565602/)**
 <!-- run online end -->
 
 

@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # Page Control for ASP.NET Web Forms - How to display the page control in full screen mode (100% width and height)
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/100/)**
+**[[Run Online]](https://codecentral.devexpress.com/128565602/)**
 <!-- run online end -->
 
 This example demonstrates how to adjust the size of the page control to the size of the browser window.

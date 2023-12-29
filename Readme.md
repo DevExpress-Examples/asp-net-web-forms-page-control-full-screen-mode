@@ -9,9 +9,6 @@
 * [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
 <!-- default file list end -->
 # How to use the ASPxPageControl control in Full Screen mode (100% browser Width and Height)
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128565602/)**
-<!-- run online end -->
 
 
 <p>This example demonstrates how to resize a DevExpress ASP.NET control (for example, ASPxPageControl) to occupy the entire browser window (a Full Screen mode)</p><p>1) Reset the following default CSS rules for a page:</p>
